@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+const human = {
+  name: "Nico",
+  lastName: "Serrano",
+  nationality: "Wish i was korean",
+  favfood: {
+    breakfast: "Sam",
+    dinner: "dduk",
+  },
+};
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//const name = human.name;
+//const lastName = human.lastName;
+const {
+  name,
+  lastName,
+  nationality: difName,
+  favfood: { dinner },
+} = human;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//const dinner = human.favfood.dinner;
+
+console.log(name, lastName, difName, dinner);
