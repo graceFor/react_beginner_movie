@@ -22,5 +22,9 @@ const ab = {
   third: "bye",
 };
 
+//Spread Operator
 const add = { ...ob, ...ab };
 console.log(add); // { first: 'hi', second: 'hello', third: 'bye' }
+
+//Spread Operator
+const shi = (something, args) => console.log(...args);
