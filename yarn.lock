@@ -2492,6 +2492,11 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
+bluebird@^2.9.27:
+  version "2.11.0"
+  resolved "https://registry.npmjs.org/bluebird/-/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
+  integrity sha1-U0uQM8AiyVecVro7Plpcqvu2UOE=
+
 bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
@@ -7756,6 +7761,13 @@ pnp-webpack-plugin@1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
+polyfill-promise@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/polyfill-promise/-/polyfill-promise-4.0.1.tgz#f8448dc27c3b967d5f67fc060f56ed64e2286b49"
+  integrity sha1-+ESNwnw7ln1fZ/wGD1btZOIoa0k=
+  dependencies:
+    bluebird "^2.9.27"
+
 portfinder@^1.0.25:
   version "1.0.28"
   resolved "https://registry.npmjs.org/portfinder/-/portfinder-1.0.28.tgz#67c4622852bd5374dd1dd900f779f53462fac778"
@@ -8430,6 +8442,13 @@ postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.17, po
     chalk "^2.4.2"
     source-map "^0.6.1"
     supports-color "^6.1.0"
+
+pr@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/pr/-/pr-0.3.2.tgz#3e204e8cf42ac3760e67a55bf79d4cace41a0646"
+  integrity sha1-PiBOjPQqw3YOZ6Vb951MrOQaBkY=
+  dependencies:
+    polyfill-promise "^4.0.1"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
