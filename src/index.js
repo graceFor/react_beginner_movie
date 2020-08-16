@@ -1,22 +1,5 @@
-const human = {
-  name: "Nico",
-  lastName: "Serrano",
-  nationality: "Wish i was korean",
-  favfood: {
-    breakfast: "Sam",
-    dinner: "dduk",
-  },
-};
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-//const name = human.name;
-//const lastName = human.lastName;
-const {
-  name,
-  lastName,
-  nationality: difName,
-  favfood: { dinner },
-} = human;
-
-//const dinner = human.favfood.dinner;
-
-console.log(name, lastName, difName, dinner);
+ReactDOM.render(<App />, document.getElementById("root"));
